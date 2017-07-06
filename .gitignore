@@ -70,3 +70,5 @@ hs_err_pid*
 /.idea/
 !/jug_gr_spracherkennung.iml
 /jug_gr_spracherkennung.iml
+/.idea/modules.xml
+/my-app.iml
