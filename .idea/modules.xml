@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://F:\intellij\jug_gr_spracherkennung\jug_gr_spracherkennung.iml" filepath="F:\intellij\jug_gr_spracherkennung\jug_gr_spracherkennung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/my-app.iml" filepath="$PROJECT_DIR$/my-app.iml" />
-    </modules>
-  </component>
-</project>
