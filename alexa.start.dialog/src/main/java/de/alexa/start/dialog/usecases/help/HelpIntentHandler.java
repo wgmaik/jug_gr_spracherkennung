@@ -24,7 +24,8 @@ public class HelpIntentHandler implements IIntentHandler{
 		this.messageProperties = messageProperties;
 	}
 
+	@Override
 	public SpeechletResponse handleIntent(IntentRequest request, Session session) {
-		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("de.dser.alexa.response.help"));
+		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("alexa.response.help"));
 	}
 }

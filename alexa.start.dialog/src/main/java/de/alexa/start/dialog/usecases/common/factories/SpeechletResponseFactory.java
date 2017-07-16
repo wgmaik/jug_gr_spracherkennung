@@ -12,9 +12,9 @@ public class SpeechletResponseFactory {
 		return speechletResponse;
 	}
 	
-	public SpeechletResponse createSimpleTellResponse(String title, String speechText) {
+	public SpeechletResponse createSimpleTellResponse(String speechText) {
         SimpleCard card = new SimpleCard();
-        card.setTitle(title);
+        card.setTitle(speechText);
         card.setContent(speechText);
 
         PlainTextOutputSpeech speech = new PlainTextOutputSpeech();

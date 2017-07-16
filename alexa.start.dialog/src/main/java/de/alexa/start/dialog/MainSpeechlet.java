@@ -37,7 +37,7 @@ public class MainSpeechlet implements Speechlet {
 
 	@Override
 	public SpeechletResponse onLaunch(LaunchRequest request, Session session) throws SpeechletException {
-		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("de.dser.alexa.response.welcome"));
+		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("alexa.response.welcome"));
 	}
 
 	@Override
