@@ -3,6 +3,7 @@ package de.alexa.start.dialog.usecases;
 import com.amazon.speech.speechlet.IntentRequest;
 import com.amazon.speech.speechlet.SpeechletException;
 import de.alexa.start.dialog.usecases.begruessung.BegruessungIntentHandler;
+import de.alexa.start.dialog.usecases.begruessung.BegruessungYesIntentHandler;
 import de.alexa.start.dialog.usecases.common.IIntentHandler;
 import de.alexa.start.dialog.usecases.common.NoActionIntentHandler;
 import de.alexa.start.dialog.usecases.help.HelpIntentHandler;
@@ -18,14 +19,17 @@ public class IntentStrategyHandler {
 	private final NoActionIntentHandler noActionIntentHandler;
 	private final HelpIntentHandler helpIntentHandler;
 	private final BegruessungIntentHandler begruessungIntentHandler;
+	private final BegruessungYesIntentHandler begruessungYesIntentHandler;
 
 	@Inject
 	public IntentStrategyHandler(NoActionIntentHandler noActionIntentHandler,
 								 HelpIntentHandler helpIntentHandler,
-								 BegruessungIntentHandler begruessungIntentHandler) {
+								 BegruessungIntentHandler begruessungIntentHandler,
+								 BegruessungYesIntentHandler begruessungYesIntentHandler) {
 		this.noActionIntentHandler = noActionIntentHandler;
 		this.helpIntentHandler = helpIntentHandler;
 		this.begruessungIntentHandler = begruessungIntentHandler;
+		this.begruessungYesIntentHandler = begruessungYesIntentHandler;
 	}
 	
 	public IIntentHandler createAndLogHandler(IntentRequest request) throws SpeechletException {
@@ -42,6 +46,8 @@ public class IntentStrategyHandler {
 		switch (intentName) {
 			case "AMAZON.HelpIntent":
 				return helpIntentHandler;
+			case "AMAZON.YesIntent":
+				return begruessungYesIntentHandler;
 			case "Begruessung":
 				return begruessungIntentHandler;
 			default:

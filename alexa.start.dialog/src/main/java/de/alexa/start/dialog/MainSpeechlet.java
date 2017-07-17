@@ -5,8 +5,6 @@ import de.alexa.start.dialog.guice.modules.PropertiesModule;
 import de.alexa.start.dialog.usecases.IntentStrategyHandler;
 import de.alexa.start.dialog.usecases.common.IIntentHandler;
 import de.alexa.start.dialog.usecases.common.factories.SpeechletResponseFactory;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -37,7 +35,7 @@ public class MainSpeechlet implements Speechlet {
 
 	@Override
 	public SpeechletResponse onLaunch(LaunchRequest request, Session session) throws SpeechletException {
-		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("alexa.response.welcome"));
+		return speechletResponseFactory.createPlainAskResponse(messageProperties.getString("alexa.response.welcome"));
 	}
 
 	@Override

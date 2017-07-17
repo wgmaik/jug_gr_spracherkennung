@@ -26,6 +26,6 @@ public class HelpIntentHandler implements IIntentHandler{
 
 	@Override
 	public SpeechletResponse handleIntent(IntentRequest request, Session session) {
-		return speechletResponseFactory.createSimpleAskResponse(messageProperties.getString("alexa.response.help"));
+		return speechletResponseFactory.createPlainAskResponse(messageProperties.getString("alexa.response.help"));
 	}
 }
