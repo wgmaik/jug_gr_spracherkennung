@@ -1,7 +1,3 @@
-GesamtvermoegenIntent nach Gesamtvermögen
-GesamtvermoegenIntent Wie ist mein Gesamtvermögen
-GesamtvermoegenIntent Wie ist mein aktuelles Gesamtvermögen
-GesamtvermoegenIntent Wieviel Vermögen haben ich insgesamt
-GesamtvermoegenIntent Wieviel Gesamtvermögen ich aktuell habe
-GesamtvermoegenIntent Wie ist mein Vermögen
-GesamtvermoegenIntent Wie hoch ist mein Gesamtvermögen
+Begruessung Begrüße unsere Runde von {gaesteAnzahl} Zuhöreren in {city}
+Begruessung Begrüße unsere Gäste in {city}
+Begruessung {gaesteAnzahl}
