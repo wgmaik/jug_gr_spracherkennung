@@ -1,3 +1,11 @@
-Begruessung Begrüße unsere Runde von {gaesteAnzahl} Zuhöreren in {city}
-Begruessung Begrüße unsere Gäste in {city}
-Begruessung {gaesteAnzahl}
+Lottozahlen Wie werden die nächsten Lottozahlen
+Lottozahlen Sag mir die nächsten Lottozahlen
+Lottozahlen Generiere mit Lottozahlen
+Lottozahlen Wie sind die Zahlen im nächsten Lotto
+
+Wuerfeln Würfel
+Wuerfeln Würfel eine Zahl
+Wuerfeln Würfel mit {seiten} Seiten
+Wuerfeln Würfel eine Zahl auf einem Würfel mit {seiten} Seiten
+Wuerfeln Würfel mit einem {seiten} Seiten Würfel
+Wuerfeln Würfel auf einem {seiten} seitigen Würfel

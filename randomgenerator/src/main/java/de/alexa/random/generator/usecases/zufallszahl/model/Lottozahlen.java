@@ -30,10 +30,10 @@ public class Lottozahlen {
 		stringBuilder.append(numbers.get(0));
 
 		for(int i = 1; i < numbers.size(); i++){
-			stringBuilder.append(",").append(numbers.get(i));
+			stringBuilder.append("<break time=\"1s\" />").append(numbers.get(i));
 		}
 
-		stringBuilder.append(" Superzahl: ").append(superzahl);
+		stringBuilder.append("<break time=\"1s\" />Superzahl: ").append(superzahl);
 
 		return stringBuilder.toString();
 	}

@@ -12,7 +12,7 @@ public class SpeechletResponseFactory {
 		speechletResponse.setShouldEndSession(true);
 		return speechletResponse;
 	}
-	
+
 	public SpeechletResponse createPlainTellResponse(String speechText) {
         SimpleCard card = new SimpleCard();
         card.setTitle(speechText);
@@ -42,5 +42,12 @@ public class SpeechletResponseFactory {
 		reprompt.setOutputSpeech(ssmlOutputSpeech);
 
 		return SpeechletResponse.newAskResponse(ssmlOutputSpeech, reprompt);
+	}
+
+	public SpeechletResponse createSsmlTellResponse(String ssmlSpeechText){
+		SsmlOutputSpeech ssmlOutputSpeech = new SsmlOutputSpeech();
+		ssmlOutputSpeech.setSsml(ssmlSpeechText);
+
+		return SpeechletResponse.newTellResponse(ssmlOutputSpeech);
 	}
 }

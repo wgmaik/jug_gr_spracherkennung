@@ -34,8 +34,8 @@ public class ZufallszahlBetweenIntentHandler implements IIntentHandler {
 		Slot startNumber = request.getIntent().getSlot("startNumber");
 		Slot endNumber = request.getIntent().getSlot("endNumber");
 
-		int startInt = Integer.getInteger(startNumber.getValue());
-		int endInt = Integer.getInteger(endNumber.getValue());
+		int startInt = Integer.valueOf(startNumber.getValue());
+		int endInt = Integer.valueOf(endNumber.getValue());
 
 		try{
 			int random = randomNumberCalculator.calculateIntBetweenTwoNumbers(startInt, endInt);

@@ -37,17 +37,17 @@ public class RandomNumberCalculatorTest {
 		assertThat(lottozahlen.getSuperzahl() <= 9, equalTo(true));
 
 		String string = String.valueOf(lottozahlen.getNumbers().get(0)) +
-				"," +
+				"<break time=\"1s\" />" +
 				lottozahlen.getNumbers().get(1) +
-				"," +
+				"<break time=\"1s\" />" +
 				lottozahlen.getNumbers().get(2) +
-				"," +
+				"<break time=\"1s\" />" +
 				lottozahlen.getNumbers().get(3) +
-				"," +
+				"<break time=\"1s\" />" +
 				lottozahlen.getNumbers().get(4) +
-				"," +
+				"<break time=\"1s\" />" +
 				lottozahlen.getNumbers().get(5) +
-				" Superzahl: " +
+				"<break time=\"1s\" />Superzahl: " +
 				lottozahlen.getSuperzahl();
 
 		assertThat(lottozahlen.toString(), equalTo(string));

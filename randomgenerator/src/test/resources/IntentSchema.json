@@ -1,29 +1,19 @@
 {
   "intents": [
     {
-      "intent": "AMAZON.CancelIntent"
-    },
-    {
       "intent": "AMAZON.HelpIntent"
     },
     {
-      "intent": "AMAZON.StopIntent"
+      "intent": "Lottozahlen"
     },
     {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
+      "intent": "Wuerfeln",
       "slots": [
         {
-          "name": "gaesteAnzahl",
+          "name": "seiten",
           "type": "AMAZON.NUMBER"
-        },
-        {
-          "name": "city",
-          "type": "AMAZON.DE_CITY"
         }
-      ],
-      "intent": "Begruessung"
+      ]
     }
   ]
 }
